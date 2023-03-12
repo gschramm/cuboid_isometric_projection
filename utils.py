@@ -9,9 +9,9 @@ def draw_isometric_projection(points_3d, ax, ax2, col = plt.cm.tab10(0)):
     points_2d = np.zeros((points_3d.shape[0], 2))
 
     ax.scatter(points_3d[:,0], points_3d[:,2], points_3d[:,1], color = col)
-    ax.set_xlabel('x0')
-    ax.set_ylabel('x2')
-    ax.set_zlabel('x1')
+    ax.set_xlabel('x0 (width)')
+    ax.set_ylabel('x2 (depth)')
+    ax.set_zlabel('x1 (height)')
     ax.view_init(azim=360-135)
     
     ax.set_xlim(points_3d.min(),points_3d.max())
@@ -34,8 +34,8 @@ def draw_isometric_projection(points_3d, ax, ax2, col = plt.cm.tab10(0)):
         ax2.plot([points_2d[con[0],0], points_2d[con[1],0]], [points_2d[con[0],1], points_2d[con[1],1]], color = col, lw=0.5)
     ax2.set_aspect('equal')
     ax2.grid(ls=':')
-    ax2.set_xlabel('x0')
-    ax2.set_ylabel('x1')
+    ax2.set_xlabel('x0 (width)')
+    ax2.set_ylabel('x1 (height)')
 
 #--------------------------------------------------------------------------------------------------------------------------
 
