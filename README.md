@@ -1,3 +1,3 @@
 # cuboid_isometric_projection
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/gschramm/cuboid_isometric_projection/HEAD)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/gschramm/cuboid_isometric_projection/HEAD?labpath=cuboid_isometric_projection.ipynb)
